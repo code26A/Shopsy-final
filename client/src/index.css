@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.navbar{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid grey !important
+}
+.nav-link{
+  font-weight: 300 !important;
+}
+.active{
+  border-bottom: 2px solid black;
+}
+.pnf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.search{
+  border-bottom: 0px;
+}
+.pnf-title{
+  font-size: 100px;
+}
+.pnf-heading{
+  font-size: 50px;
+}
+.pnf-btn{
+  font-size: 32px;
+}
+  /* Register.css */
+
+/* Body background */
+body {
+  background-color: #f5f5f5; /* Light gray background */
+  font-family: 'Poppins', sans-serif; /* Default font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Container for the registration form */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align items in a column */
+  height: 100vh;
+  background: linear-gradient(to bottom right, #3498db, #2980b9);
+}
+
+/* Heading above the form */
+.register-heading {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff; /* White color for contrast */
+  font-family: 'Montserrat', sans-serif; /* Montserrat for heading */
+  font-size: 2rem; /* Larger font size */
+}
+
+/* Registration form */
+.registration-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form title */
+.registration-form h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Montserrat for form title */
+  font-size: 2rem; /* Larger font size */
+}
+/*cart*/
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+/* Form labels */
+.registration-form label {
+  font-weight: bold; /* Make labels bold */
+  font-size: 1.1rem; /* Increase font size */
+  color: #444; /* Darken label color */
+  padding-bottom: 5px; /* Add padding below labels */
+}
+
+/* Form inputs */
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="phone"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Poppins for form inputs */
+}
+
+/* Form inputs focus */
+.registration-form input[type="text"]:focus,
+.registration-form input[type="email"]:focus,
+.registration-form input[type="password"]:focus,
+.registration-form input[type="phone"]:focus {
+  border-color: #3498db;
+}
+
+/* Submit button */
+.registration-form button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Poppins for submit button */
+}
+
+/* Submit button hover effect */
+.registration-form button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+.img-size{
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+}
