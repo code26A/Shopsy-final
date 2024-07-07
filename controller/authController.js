@@ -218,9 +218,10 @@ export const updateProfileController = async (req, res) => {
 };
 export const getOrdersController = async (req, res) => {
   try {
-    const orders = await pool.query("SELECT * FROM orders WHERE buyer_id=$1", [
-      req.user.user_id,
-    ]);
+    const orders = await pool.query(
+      "SELECT * FROM orders WHERE buyer_id=$1 ORDER BY created_at DESC",
+      [req.user.user_id]
+    );
     const buyer = await pool.query("SELECT * FROM users WHERE id=$1", [
       req.user.user_id,
     ]);
@@ -240,7 +241,9 @@ export const getOrdersController = async (req, res) => {
 };
 export const getALLOrdersController = async (req, res) => {
   try {
-    const orders = await pool.query("SELECT * FROM orders ORDER BY created_at");
+    const orders = await pool.query(
+      "SELECT * FROM orders ORDER BY created_at DESC"
+    );
     const buyer = await pool.query("SELECT * FROM users WHERE id=$1", [
       req.user.user_id,
     ]);

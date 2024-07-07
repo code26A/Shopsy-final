@@ -73,6 +73,7 @@ const CartPage = () => {
       localStorage.removeItem("cart");
       setCart([]);
       toast.success("Payment Successful");
+      navigate("/dashboard/user/orders");
     } catch (error) {
       console.error("Payment Error:", error);
       setLoading(false);
@@ -181,7 +182,26 @@ const CartPage = () => {
                   <p>
                     <strong>We accept</strong>
                   </p>
-                  {/* Payment logos */}
+                  <div className="payment-methods d-flex gap-3">
+                    <img
+                      width="70px"
+                      src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/paytm-icon.png"
+                      alt="Paytm"
+                      className="payment-logo "
+                    />
+                    <img
+                      width="50px"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/512px-Google_Pay_Logo.svg.png?20221017164555"
+                      alt="Google Pay"
+                      className="payment-logo"
+                    />
+                    <img
+                      width="60px"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/800px-Visa_Inc._logo.svg.png"
+                      alt="Visa"
+                      className="payment-logo"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

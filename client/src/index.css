@@ -154,3 +154,5 @@ body {
   height: 10vw;
   object-fit: cover;
 }
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import "antd/dist/reset.css";

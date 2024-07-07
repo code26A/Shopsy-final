@@ -30,7 +30,7 @@ const Header = () => {
   const userMenu = (
     <div className="dropdown-menu dropdown-menu-end">
       <NavLink
-        to={`/dashboard/${auth?.user?.role === 1 ? "admin" : "user"}`}
+        to={`/dashboard/${auth?.user?.role == 1 ? "admin" : "user"}`}
         className="dropdown-item"
       >
         Dashboard
